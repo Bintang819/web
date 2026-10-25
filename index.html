@@ -3,93 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Navigasi Elegan</title>
+    <title>Oracle Red Bull Racing</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #080c14; color: #ffffff; }
 
-        body {
-            background-color: #0b0b0b;
-            color: #ffffff;
-        }
-
-        /* Navigasi Bar */
+        /* Navigation Bar */
         nav {
-            background-color: #0b0b0b;
-            padding: 15px 40px;
+            background-color: #0b0f19;
+            padding: 18px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #222;
+            border-bottom: 2px solid #eb1723;
         }
 
-        .nav-brand {
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 0.5px;
-            color: #fff;
+        .brand {
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-transform: uppercase;
         }
 
-        .nav-menu {
+        .brand span { color: #eb1723; }
+
+        .nav-links {
             display: flex;
-            gap: 30px;
-            align-items: center;
+            gap: 25px;
         }
 
-        .nav-menu a {
-            color: #bbb;
+        .nav-links a {
+            color: #e0e0e0;
             text-decoration: none;
             font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
             transition: color 0.3s;
         }
 
-        .nav-menu a:hover, .nav-menu a.active {
-            color: #ffffff;
+        .nav-links a:hover, .nav-links a.active {
+            color: #ffcc00;
         }
 
-        .nav-menu a.active {
-            font-weight: 600;
-        }
-
-        /* Konten Utama */
+        /* Hero Section */
         .hero {
-            padding: 80px 40px;
+            padding: 100px 40px;
             text-align: center;
+            background: linear-gradient(180deg, #0b0f19 0%, #080c14 100%);
         }
 
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            color: #888;
-            font-size: 16px;
-        }
+        .hero h1 { font-size: 42px; margin-bottom: 10px; }
+        .hero p { color: #8899a6; font-size: 18px; }
     </style>
 </head>
 <body>
 
-    <!-- Navigasi -->
+    <!-- Header Navigation -->
     <nav>
-        <div class="nav-brand">EigerAdventure Offic...</div>
-        <div class="nav-menu">
-            <a href="#" class="active" style="color: #ffffff;">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Tentang ▾</a>
-            <a href="#">Member</a>
-            <a href="#">Contact</a>
+        <div class="brand">Oracle <span>Red Bull</span> Racing</div>
+        <div class="nav-links">
+            <a href="/" class="active">Home</a>
+            <a href="/team">Team</a>
+            <a href="/drivers">Drivers</a>
+            <a href="/shop" target="_blank">Shop ↗</a>
         </div>
     </nav>
 
-    <!-- Konten -->
+    <!-- Main Content -->
     <section class="hero">
-        <h1>Selamat Datang di Website Anda</h1>
-        <p>Struktur HTML sudah dilengkapi dengan DOCTYPE standar dan navigasi elegan.</p>
+        <h1>GIVES YOU WINGS</h1>
+        <p>Selamat datang di situs resmi Oracle Red Bull Racing.</p>
     </section>
 
 </body>
